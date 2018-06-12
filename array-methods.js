@@ -28,14 +28,15 @@ planets.forEach(planetSection); /* Using a for Each funciton to iterate through 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 
+
 const UCplanets = planets.map(function (planet) {
-    const setupUCplantes = planet.charAt(0).toUpperCase + planet.slice(1)
-    return setupUCplantes
+    return planet.charAt(0).toUpperCase().concat(planet.slice(1).toLocaleLowerCase());
 })
+console.log(UCplanets);
 
-console.log(UCplanets)
 
-/*---STEP-3------------------------------------------------------------*/
+
+/*---STEP-3-------------------------------------------------------------------------------------------*/
 
 /*
     Use the filter method to create a new array that
