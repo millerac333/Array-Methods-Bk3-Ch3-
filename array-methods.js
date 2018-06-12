@@ -28,13 +28,10 @@ planets.forEach(planetSection); /* Using a for Each funciton to iterate through 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 
-
 const UCplanets = planets.map(function (planet) {
     return planet.charAt(0).toUpperCase().concat(planet.slice(1).toLocaleLowerCase());
 })
 console.log(UCplanets);
-
-
 
 /*---STEP-3-------------------------------------------------------------------------------------------*/
 
@@ -46,14 +43,14 @@ console.log(UCplanets);
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
 
+const withLetterE = planets.filter(planet => {
+    const eInName = planet.includes('e')
+    return eInName
+})
 
+console.log(withLetterE);
 
-
-
-
-
-
-
+/*---STEP-4-------------------------------------------------------------*/
 
 // Use the reduce method to create a sentence from the words in the following array
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
