@@ -20,15 +20,6 @@ planets.forEach(planetSection); /* Using a for Each funciton to iterate through 
 
 /*---STEP-2-------------------------------------------------------------------------------------------------*/
 
-planets = planets.map(function(string){
-    return string.charAt(0).toUpperCase() + string.slice(1).replace(/ -/, ':');
-  });
-
-
-
-
-
-
 /*
     Use the map method to create a new array where the
     first letter of each planet is capitalized. Use the
@@ -37,6 +28,14 @@ planets = planets.map(function(string){
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase
 */
 
+const UCplanets = planets.map(function (planet) {
+    const setupUCplantes = planet.charAt(0).toUpperCase + planet.slice(1)
+    return setupUCplantes
+})
+
+console.log(UCplanets)
+
+/*---STEP-3------------------------------------------------------------*/
 
 /*
     Use the filter method to create a new array that
@@ -45,6 +44,14 @@ planets = planets.map(function(string){
 
     https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/includes
 */
+
+
+
+
+
+
+
+
 
 
 // Use the reduce method to create a sentence from the words in the following array
