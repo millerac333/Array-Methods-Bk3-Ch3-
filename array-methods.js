@@ -50,7 +50,15 @@ const withLetterE = planets.filter(planet => {
 
 console.log(withLetterE);
 
-/*---STEP-4-------------------------------------------------------------*/
+/*---STEP-4-------------------------------------------------------------------------------------------------------------*/
 
 // Use the reduce method to create a sentence from the words in the following array
+
 const words = ["The", "early", "bird", "might", "get", "the", "worm", "but", "the", "second", "mouse", "gets", "the", "cheese"]
+
+const sentence = words.reduce(function (current, next) {
+    const concatWords = current + " " + next
+    return concatWords
+})
+
+console.log(sentence)
